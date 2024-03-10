@@ -1,0 +1,34 @@
+[
+	{
+		"id": 3,
+		"neighbors": [
+			4,
+			5
+		],
+		"endpoints": [
+			0,
+			1,
+			2
+		]
+	},
+	{
+		"id": 4,
+		"neighbors": [
+			3
+		],
+		"endpoints": [
+			3,
+			4
+		]
+	},
+	{
+		"id": 5,
+		"neighbors": [
+			3
+		],
+		"endpoints": [
+			5,
+			6
+		]
+	}
+]
