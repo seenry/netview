@@ -5,6 +5,11 @@ let underlay = [];
 let tree = [];
 
 const spread = 0.05;
+const k0 = 0.00003; // Attraction
+const k1 = 2.5; // Repulsion
+const k2 = 0.95; // Drag
+const k3 = 0.001; // Friction
+const min_v = 1e-5;
 
 class Vertex {
 	constructor(id_) {
@@ -63,11 +68,6 @@ function load() {
 }
 
 function update() {
-	const k0 = 0.00003; // Attraction
-	const k1 = 2.5; // Repulsion
-	const k2 = 0.98; // Drag
-	const k3 = 0.0001; // Friction
-	const min_v = 1e-5;
 	const helper = (l) => {
 		l.forEach((e) => {
 			let a = [ 0, 0 ];
